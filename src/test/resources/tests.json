@@ -1,0 +1,19 @@
+[
+	{
+		"url": "/browse/men?fl=r1",
+		"canonical": "/browse/men/Nordstrom-US",
+		"title": "Mens Clothing - Nordstroms",
+		"h1": "Mens Clothing - Nordstroms",
+		"robots": "noindex",
+		"hreflangs": 
+		{
+			"en": "/browse/men/Nordstrom-US",
+			"ja": "/browse/%E3%83%A1%E3%83%B3%E3%82%BA/Nordstrom-US",
+			"fr": "/browse/mode-homme/Nordstrom-US",
+			"en-CA": "/browse/men/Nordstrom-US",
+			"en-GB": "/browse/men/Nordstrom-US",
+			"en-AU": "/browse/men/Nordstrom-US",
+			"de": "/browse/herrenmode/Nordstrom-US"
+		}
+	}
+]
