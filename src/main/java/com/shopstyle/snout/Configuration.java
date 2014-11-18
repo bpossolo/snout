@@ -2,10 +2,14 @@ package com.shopstyle.snout;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.EnumSet;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.json.JSONArray;
@@ -14,17 +18,16 @@ import org.json.JSONObject;
 public class Configuration {
 
 	private static final String GoogleBotUserAgent = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
+	private static final String ConsoleLogOutput = "console";
+	private static final String FileLogOutput = "file";
 
+	private String logOutput;
 	private String userAgent;
-
 	private int numThreads;
-
 	private String baseUrl;
-
+	private Set<Locale> locales;
 	private Map<String, String> altLocaleBaseUrls;
-
 	private List<Test> tests;
-
 	private int maxAttemptsPerTest;
 
 	public Configuration(File configFile, File testsFile) {
@@ -36,17 +39,20 @@ public class Configuration {
 		try{
 			String fileContents = FileUtils.readFileToString(configFile);
 			JSONObject json = new JSONObject(fileContents);
+			logOutput = json.getString("logOutput");
 			baseUrl = json.getString("baseUrl");
 			numThreads = json.getInt("numThreads");
 			maxAttemptsPerTest = json.getInt("maxAttemptsPerTest");
 
 			// parse the alternate locale base urls
 			JSONObject jsonAltLocaleBaseUrls = json.getJSONObject("altLocaleBaseUrls");
+			locales = new HashSet<>(jsonAltLocaleBaseUrls.length());
 			altLocaleBaseUrls = new HashMap<>(jsonAltLocaleBaseUrls.length());
-			String[] locales = JSONObject.getNames(jsonAltLocaleBaseUrls);
-			for (String locale : locales){
-				String altLocaleBaseUrl = jsonAltLocaleBaseUrls.getString(locale);
-				altLocaleBaseUrls.put(locale, altLocaleBaseUrl);
+			String[] languageTags = JSONObject.getNames(jsonAltLocaleBaseUrls);
+			for (String languageTag : languageTags){
+				locales.add(Locale.forLanguageTag(languageTag));
+				String altLocaleBaseUrl = jsonAltLocaleBaseUrls.getString(languageTag);
+				altLocaleBaseUrls.put(languageTag, altLocaleBaseUrl);
 			}
 
 			// parse the user agent
@@ -83,9 +89,12 @@ public class Configuration {
 					robotsSet = MetaRobots.parse(robots);
 				}
 
-				HashMap<String,String> hreflangs = null;
+				Map<String,String> hreflangs = null;
 				JSONObject jsonHreflangs = jsonTest.getJSONObject("hreflangs");
-				if (jsonHreflangs != null ){
+				if (jsonHreflangs == null ){
+					hreflangs = Collections.emptyMap();
+				}
+				else {
 					String[] locales = JSONObject.getNames(jsonHreflangs);
 					hreflangs = new HashMap<>(locales.length);
 					for (String locale : locales){
@@ -96,6 +105,7 @@ public class Configuration {
 				}
 
 				Test t = new Test();
+				t.setName(jsonTest.optString("name"));
 				t.setUrl(url);
 				t.setCanonical(canonical);
 				t.setH1(jsonTest.optString("h1", null));
@@ -124,6 +134,22 @@ public class Configuration {
 
 	public int getMaxAttemptsPerTest() {
 		return maxAttemptsPerTest;
+	}
+
+	public Map<String, String> getAltLocaleBaseUrls() {
+		return altLocaleBaseUrls;
+	}
+
+	public Set<Locale> getLocales(){
+		return locales;
+	}
+
+	public boolean logOutputToFile(){
+		return FileLogOutput.equals(logOutput);
+	}
+
+	public boolean logOutputToConsole(){
+		return ConsoleLogOutput.equals(logOutput);
 	}
 
 }

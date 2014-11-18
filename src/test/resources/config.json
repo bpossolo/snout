@@ -1,5 +1,6 @@
 {
-	"numThreads": 5,
+	"logOutput": "console",
+	"numThreads": 1,
 	"maxAttemptsPerTest": 3,
 	"userAgent": "googlebot",
 	"baseUrl": "http://www.shopstyle.com",

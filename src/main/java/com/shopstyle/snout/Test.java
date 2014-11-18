@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class Test {
 
+	private String name;
 	private int attempts = 0;
 	private String url;
 	private String canonical;
@@ -12,6 +13,14 @@ public class Test {
 	private String h1;
 	private EnumSet<MetaRobots> robots;
 	private Map<String, String> hreflangs;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public int getAttempts() {
 		return attempts;
