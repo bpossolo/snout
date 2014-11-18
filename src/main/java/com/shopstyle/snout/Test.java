@@ -1,6 +1,8 @@
 package com.shopstyle.snout;
 
+import java.util.ArrayList;
 import java.util.EnumSet;
+import java.util.List;
 import java.util.Map;
 
 public class Test {
@@ -13,9 +15,10 @@ public class Test {
 	private String h1;
 	private EnumSet<MetaRobots> robots;
 	private Map<String, String> hreflangs;
+	private List<Failure> failures;
 
 	public String getName() {
-		return name;
+		return (name == null) ? url : name;
 	}
 
 	public void setName(String name) {
@@ -76,5 +79,23 @@ public class Test {
 
 	public void setRobots(EnumSet<MetaRobots> robots) {
 		this.robots = robots;
+	}
+
+	public List<Failure> getFailures() {
+		return failures;
+	}
+
+	public boolean hasFailures(){
+		if (failures == null || failures.isEmpty()){
+			return false;
+		}
+		return true;
+	}
+
+	public void addFailure(Failure f){
+		if (failures == null){
+			failures = new ArrayList<>();
+		}
+		failures.add(f);
 	}
 }

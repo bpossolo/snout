@@ -1,10 +1,9 @@
 {
-	"logOutput": "console",
-	"numThreads": 1,
+	"numThreads": 5,
 	"maxAttemptsPerTest": 3,
 	"userAgent": "googlebot",
 	"baseUrl": "http://www.shopstyle.com",
-	"altLocaleBaseUrls": 
+	"altLocaleBaseUrls":
 	{
 		"en": "http://www.shopstyle.com",
 		"en-CA": "http://www.shopstyle.ca",

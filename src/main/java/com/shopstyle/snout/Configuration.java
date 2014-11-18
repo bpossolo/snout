@@ -18,10 +18,7 @@ import org.json.JSONObject;
 public class Configuration {
 
 	private static final String GoogleBotUserAgent = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)";
-	private static final String ConsoleLogOutput = "console";
-	private static final String FileLogOutput = "file";
 
-	private String logOutput;
 	private String userAgent;
 	private int numThreads;
 	private String baseUrl;
@@ -39,7 +36,6 @@ public class Configuration {
 		try{
 			String fileContents = FileUtils.readFileToString(configFile);
 			JSONObject json = new JSONObject(fileContents);
-			logOutput = json.getString("logOutput");
 			baseUrl = json.getString("baseUrl");
 			numThreads = json.getInt("numThreads");
 			maxAttemptsPerTest = json.getInt("maxAttemptsPerTest");
@@ -142,14 +138,6 @@ public class Configuration {
 
 	public Set<Locale> getLocales(){
 		return locales;
-	}
-
-	public boolean logOutputToFile(){
-		return FileLogOutput.equals(logOutput);
-	}
-
-	public boolean logOutputToConsole(){
-		return ConsoleLogOutput.equals(logOutput);
 	}
 
 }

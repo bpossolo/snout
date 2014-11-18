@@ -1,12 +1,11 @@
 package com.shopstyle.snout;
 
+import java.text.MessageFormat;
+import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,7 +21,8 @@ public class TestOrchestrator {
 
 	public void go() throws Exception {
 
-		ConcurrentLinkedQueue<Test> queue = new ConcurrentLinkedQueue<Test>(config.getTests());
+		ConcurrentLinkedQueue<Test> taskQueue = new ConcurrentLinkedQueue<>(config.getTests());
+		ConcurrentLinkedQueue<Test> failureQueue = new ConcurrentLinkedQueue<>();
 		int numThreads = config.getNumThreads();
 		ExecutorService executor = Executors.newFixedThreadPool(numThreads);
 		CountDownLatch latch = new CountDownLatch(numThreads);
@@ -31,22 +31,35 @@ public class TestOrchestrator {
 
 		// create the test runners
 		for (int i = 0; i < numThreads; i++){
-			Handler handler = null;
-			if (config.logOutputToConsole()){
-				handler = new ConsoleHandler();
-			}
-			else {
-				// assign a unique file logger to each test runner/thread
-				String logFilenamePatter = "%t/snout-" + i + ".%g.log";
-				handler = new FileHandler(logFilenamePatter);
-			}
-			TestRunner runner = new TestRunner(config, queue, latch, handler);
+			TestRunner runner = new TestRunner(config, taskQueue, failureQueue, latch);
 			executor.execute(runner);
 		}
 
 		latch.await();
 		executor.shutdown();
 		log.info("All test runners have finished");
+
+		logResults(failureQueue);
+	}
+
+	private void logResults(Queue<Test> failureQueue){
+		int attempted = config.getTests().size();
+		int failed = failureQueue.size();
+		int passed = attempted - failed;
+
+		String stats = MessageFormat.format("{0}/{1} tests passed\n\n", passed, attempted);
+
+		StringBuilder sb = new StringBuilder(stats);
+
+		for (Test failedTest : failureQueue){
+			sb.append("Test Failure: ").append(failedTest.getName()).append('\n');
+			for (Failure f : failedTest.getFailures()){
+				sb.append("  ").append(f.getMsg()).append('\n');
+			}
+			sb.append('\n');
+		}
+
+		log.info(sb.toString());
 	}
 
 }

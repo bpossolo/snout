@@ -1,11 +1,11 @@
 [
 	{
-		"name": "Men Nordstroms",
+		"name": "Men Retailer",
 		"url": "/browse/men?fl=r1",
 		"canonical": "/browse/men/Nordstrom-US",
 		"title": "Nordstrom Men's Fashion - ShopStyle",
 		"h1": "Nordstrom Men's Fashion",
-		"hreflangs": 
+		"hreflangs":
 		{
 			"en": "/browse/men/Nordstrom-US",
 			"ja": "/browse/%E3%83%A1%E3%83%B3%E3%82%BA/Nordstrom-US",
@@ -18,13 +18,13 @@
 	},
 
 	{
-		"name": "Mens too many filters",
+		"name": "Men Many Filters NoIndex",
 		"url": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0",
-		"robots": "noindex",
 		"canonical": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0",
 		"title": "Men's Fashion on Sale - ShopStyle",
 		"h1": "Men's Fashion on sale",
-		"hreflangs": 
+		"robots": "noindex",
+		"hreflangs":
 		{
 			"en": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0"
 		}
