@@ -1,0 +1,108 @@
+[
+	{
+		"name": "Home page",
+		"url": "/",
+		"canonical": "/",
+		"title": "ShopStyle UK for Fashion and Designers - Shoes, Jewellery, Dresses & Clothes",
+		"hreflangs":
+		{
+			"en": "/",
+			"en-CA": "/",
+			"en-GB": "/",
+			"en-AU": "/",
+			"fr": "/",
+			"de": "/",
+			"ja": "/"
+		}
+	},
+
+	{
+		"name": "Bags",
+		"url": "/browse/handbags",
+		"canonical": "/browse/handbags",
+		"title": "Handbags - ShopStyle UK",
+		"h1": "Bags",
+		"hreflangs":
+		{
+			"en": "/browse/handbags",
+			"en-CA": "/browse/handbags",
+			"en-GB": "/browse/handbags",
+			"en-AU": "/browse/handbags",
+			"fr": "/browse/sacs",
+			"de": "/browse/taschen",
+			"ja": "/browse/%E3%83%90%E3%83%83%E3%82%B0"
+		}
+	},
+
+	{
+		"name": "Michael Cors (vanity url with brand)",
+		"url": "/browse/Michael-Kors",
+		"canonical": "/browse/women/Michael-Kors",
+		"title": "Michael Kors - ShopStyle UK",
+		"h1": "Michael Kors",
+		"hreflangs":
+		{
+			"en": "/browse/women/Michael-Kors",
+			"en-CA": "/browse/women/Michael-Kors",
+			"en-GB": "/browse/women/Michael-Kors",
+			"en-AU": "/browse/women/Michael-Kors",
+			"fr": "/browse/mode-femme/Michael-Kors",
+			"de": "/browse/damenmode/Michael-Kors",
+			"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Michael-Kors"
+		}
+	},
+
+	{
+		"name": "Michael Cors (ugly url with brand)",
+		"url": "/browse?fl=b391",
+		"canonical": "/browse/women/Michael-Kors",
+		"title": "Michael Kors - ShopStyle UK",
+		"h1": "Michael Kors",
+		"hreflangs":
+		{
+			"en": "/browse/women/Michael-Kors",
+			"en-CA": "/browse/women/Michael-Kors",
+			"en-GB": "/browse/women/Michael-Kors",
+			"en-AU": "/browse/women/Michael-Kors",
+			"fr": "/browse/mode-femme/Michael-Kors",
+			"de": "/browse/damenmode/Michael-Kors",
+			"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Michael-Kors"
+		}
+	},
+
+	{
+		"name": "Michael Cors (vanity url with category + brand)",
+		"url": "/browse/handbags/Michael-Kors",
+		"canonical": "/browse/handbags/Michael-Kors",
+		"title": "Michael Kors Handbags - ShopStyle UK",
+		"h1": "Michael Kors Bags",
+		"hreflangs":
+		{
+			"en": "/browse/handbags/Michael-Kors",
+			"en-CA": "/browse/handbags/Michael-Kors",
+			"en-GB": "/browse/handbags/Michael-Kors",
+			"en-AU": "/browse/handbags/Michael-Kors",
+			"fr": "/browse/sacs/Michael-Kors",
+			"de": "/browse/taschen/Michael-Kors",
+			"ja": "/browse/%E3%83%90%E3%83%83%E3%82%B0/Michael-Kors"
+		}
+	},
+
+	{
+		"name": "Michael Cors (ugly url with category + brand)",
+		"url": "/browse/handbags?fl=b391",
+		"canonical": "/browse/handbags/Michael-Kors",
+		"title": "Michael Kors Handbags - ShopStyle UK",
+		"h1": "Michael Kors Bags",
+		"hreflangs":
+		{
+			"en": "/browse/handbags/Michael-Kors",
+			"en-CA": "/browse/handbags/Michael-Kors",
+			"en-GB": "/browse/handbags/Michael-Kors",
+			"en-AU": "/browse/handbags/Michael-Kors",
+			"fr": "/browse/sacs/Michael-Kors",
+			"de": "/browse/taschen/Michael-Kors",
+			"ja": "/browse/%E3%83%90%E3%83%83%E3%82%B0/Michael-Kors"
+		}
+	}
+]

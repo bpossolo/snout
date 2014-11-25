@@ -1,0 +1,48 @@
+[
+	{
+		"name": "Home page",
+		"url": "/",
+		"canonical": "/",
+		"title": "ShopStyle（ショップスタイル）- メンズ・レディースファッション、靴、バッグ、財布、人気ブランド服の通販・検索",
+		"hreflangs":
+		{
+			"en": "/",
+			"ja": "/",
+			"fr": "/",
+			"en-CA": "/",
+			"en-GB": "/",
+			"en-AU": "/",
+			"de": "/"
+		}
+	},
+
+	{
+		"name": "Living",
+		"url": "/browse/%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2-%E9%9B%91%E8%B2%A8",
+		"canonical": "/browse/%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2-%E9%9B%91%E8%B2%A8",
+		"title": "インテリア＆雑貨 通販 | ShopStyle（ショップスタイル）",
+		"h1": "インテリア＆雑貨",
+		"hreflangs":
+		{
+			"en": "/browse/living",
+			"ja": "/browse/%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2-%E9%9B%91%E8%B2%A8",
+			"fr": "/browse/maison-vie-quotidienne",
+			"en-CA": "/browse/living",
+			"en-GB": "/browse/living",
+			"en-AU": "/browse/living",
+			"de": "/browse/haushalt-wohnen"
+		}
+	},
+
+	{
+		"name": "Living products from Japanese retailer",
+		"url": "/browse/%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2-%E9%9B%91%E8%B2%A8?fl=r649",
+		"canonical": "/browse/%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2-%E9%9B%91%E8%B2%A8/%E8%A5%BF%E6%AD%A6%E3%81%9D%E3%81%94%E3%81%86e%E3%83%87%E3%83%91%E3%83%BC%E3%83%88-JP",
+		"title": "西武そごうeデパート インテリア＆雑貨 通販 | ShopStyle（ショップスタイル）",
+		"h1": "西武そごうeデパート インテリア＆雑貨",
+		"hreflangs":
+		{
+			"ja": "/browse/%E3%82%A4%E3%83%B3%E3%83%86%E3%83%AA%E3%82%A2-%E9%9B%91%E8%B2%A8/%E8%A5%BF%E6%AD%A6%E3%81%9D%E3%81%94%E3%81%86e%E3%83%87%E3%83%91%E3%83%BC%E3%83%88-JP"
+		}
+	}
+]

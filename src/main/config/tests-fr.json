@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Home page",
+		"url": "/",
+		"canonical": "/",
+		"title": "ShopStyle France pour la mode et les stylistes : chaussures, bijoux, robes et vêtements",
+		"hreflangs":
+		{
+			"en": "/",
+			"ja": "/",
+			"fr": "/",
+			"en-CA": "/",
+			"en-GB": "/",
+			"en-AU": "/",
+			"de": "/"
+		}
+	},
+
+	{
+		"name": "Womens Shoes",
+		"url": "/browse/chaussures-bottes",
+		"canonical": "/browse/chaussures-bottes",
+		"title": "Chaussures pour femme - ShopStyle France",
+		"h1": "Chaussures",
+		"hreflangs":
+		{
+			"en": "/browse/womens-shoes",
+			"ja": "/browse/%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA",
+			"fr": "/browse/chaussures-bottes",
+			"en-CA": "/browse/womens-shoes",
+			"en-GB": "/browse/womens-shoes",
+			"en-AU": "/browse/womens-shoes",
+			"de": "/browse/schuhe-stiefel"
+		}
+	},
+
+	{
+		"name": "Round toe shoes",
+		"url": "/browse?fts=chaussures+a+bout+rond",
+		"canonical": "/browse?fts=chaussures+a+bout+rond",
+		"title": "Chaussures A Bout Rond - ShopStyle France",
+		"h1": "Chaussures a bout rond"
+	}
+]

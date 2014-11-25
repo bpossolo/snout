@@ -1,5 +1,22 @@
 [
 	{
+		"name": "Home page",
+		"url": "/",
+		"canonical": "/",
+		"title": "ShopStyle Deutschland - die aktuellsten Trends, die angesagtesten Schuhe, Schmuck, Kleider & Kleidung",
+		"hreflangs":
+		{
+			"en": "/",
+			"ja": "/",
+			"fr": "/",
+			"en-CA": "/",
+			"en-GB": "/",
+			"en-AU": "/",
+			"de": "/"
+		}
+	},
+
+	{
 		"name": "Womens Jewelry",
 		"url": "/browse/schmuck",
 		"canonical": "/browse/schmuck",

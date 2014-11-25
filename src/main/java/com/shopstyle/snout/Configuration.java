@@ -86,7 +86,7 @@ public class Configuration {
 				}
 
 				Map<String,String> hreflangs = null;
-				JSONObject jsonHreflangs = jsonTest.getJSONObject("hreflangs");
+				JSONObject jsonHreflangs = jsonTest.optJSONObject("hreflangs");
 				if (jsonHreflangs == null ){
 					hreflangs = Collections.emptyMap();
 				}
