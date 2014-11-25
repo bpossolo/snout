@@ -1,18 +1,22 @@
-[
-	{
-		"name": "Home page",
-		"url": "/",
-		"canonical": "/",
-		"title": "ShopStyle Canada for Fashion and Designers - Shoes, Jewelry, Dresses & Clothes",
-		"hreflangs":
+{
+	"locale": "en-CA",
+	"tests":
+	[
 		{
-			"en": "/",
-			"ja": "/",
-			"fr": "/",
-			"en-CA": "/",
-			"en-GB": "/",
-			"en-AU": "/",
-			"de": "/"
+			"name": "Home page",
+			"url": "/",
+			"canonical": "/",
+			"title": "ShopStyle Canada for Fashion and Designers - Shoes, Jewelry, Dresses & Clothes",
+			"hreflangs":
+			{
+				"en": "/",
+				"ja": "/",
+				"fr": "/",
+				"en-CA": "/",
+				"en-GB": "/",
+				"en-AU": "/",
+				"de": "/"
+			}
 		}
-	}
-]
+	]
+}

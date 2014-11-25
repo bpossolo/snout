@@ -1,0 +1,15 @@
+{
+	"numThreads": 5,
+	"maxAttemptsPerTest": 3,
+	"userAgent": "googlebot",
+	"baseUrls":
+	{
+		"en": "http://www.shopstyledev.com",
+		"en-CA": "http://www-ca.shopstyledev.com",
+		"en-GB": "http://www-uk.shopstyledev.com",
+		"en-AU": "http://www-au.shopstyledev.com",
+		"ja": "http://www-jp.shopstyledev.com",
+		"fr": "http://www-fr.shopstyledev.com",
+		"de": "http://www-de.shopstyledev.com"
+	}
+}

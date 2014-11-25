@@ -1,36 +1,40 @@
-[
-	{
-		"name": "Home page",
-		"url": "/",
-		"canonical": "/",
-		"title": "ShopStyle Australia for Fashion and Designers - Shoes, Jewellery, Dresses & Clothes",
-		"hreflangs":
+{
+	"locale": "en-AU",
+	"tests":
+	[
 		{
-			"en": "/",
-			"ja": "/",
-			"fr": "/",
-			"en-CA": "/",
-			"en-GB": "/",
-			"en-AU": "/",
-			"de": "/"
-		}
-	},
+			"name": "Home page",
+			"url": "/",
+			"canonical": "/",
+			"title": "ShopStyle Australia for Fashion and Designers - Shoes, Jewellery, Dresses & Clothes",
+			"hreflangs":
+			{
+				"en": "/",
+				"ja": "/",
+				"fr": "/",
+				"en-CA": "/",
+				"en-GB": "/",
+				"en-AU": "/",
+				"de": "/"
+			}
+		},
 
-	{
-		"name": "Men",
-		"url": "/browse/men",
-		"canonical": "/browse/men",
-		"title": "Men's Fashion - ShopStyle Australia",
-		"h1": "Men's Fashion",
-		"hreflangs":
 		{
-			"en": "/browse/men",
-			"ja": "/browse/%E3%83%A1%E3%83%B3%E3%82%BA",
-			"fr": "/browse/mode-homme",
-			"en-CA": "/browse/men",
-			"en-GB": "/browse/men",
-			"en-AU": "/browse/men",
-			"de": "/browse/herrenmode"
+			"name": "Men",
+			"url": "/browse/men",
+			"canonical": "/browse/men",
+			"title": "Men's Fashion - ShopStyle Australia",
+			"h1": "Men's Fashion",
+			"hreflangs":
+			{
+				"en": "/browse/men",
+				"ja": "/browse/%E3%83%A1%E3%83%B3%E3%82%BA",
+				"fr": "/browse/mode-homme",
+				"en-CA": "/browse/men",
+				"en-GB": "/browse/men",
+				"en-AU": "/browse/men",
+				"de": "/browse/herrenmode"
+			}
 		}
-	}
-]
+	]
+}

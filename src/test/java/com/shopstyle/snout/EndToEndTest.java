@@ -1,5 +1,7 @@
 package com.shopstyle.snout;
 
+import static org.junit.Assert.assertTrue;
+
 import java.io.File;
 import java.nio.file.Paths;
 
@@ -13,7 +15,7 @@ public class EndToEndTest {
 		File testsFile = Paths.get(EndToEndTest.class.getResource("/tests.json").toURI()).toFile();
 		Configuration config = new Configuration(configFile, testsFile);
 		TestOrchestrator orchestrator = new TestOrchestrator(config);
-		orchestrator.go();
+		assertTrue(orchestrator.go());
 	}
 
 }

@@ -19,7 +19,7 @@ public class TestOrchestrator {
 		this.config = config;
 	}
 
-	public void go() throws Exception {
+	public boolean go() throws Exception {
 
 		ConcurrentLinkedQueue<Test> taskQueue = new ConcurrentLinkedQueue<>(config.getTests());
 		ConcurrentLinkedQueue<Test> failureQueue = new ConcurrentLinkedQueue<>();
@@ -39,10 +39,11 @@ public class TestOrchestrator {
 		executor.shutdown();
 		log.info("All test runners have finished");
 
-		logResults(failureQueue);
+		boolean success = logResults(failureQueue);
+		return success;
 	}
 
-	private void logResults(Queue<Test> failureQueue){
+	private boolean logResults(Queue<Test> failureQueue){
 		int attempted = config.getTests().size();
 		int failed = failureQueue.size();
 		int passed = attempted - failed;
@@ -60,6 +61,8 @@ public class TestOrchestrator {
 		}
 
 		log.info(sb.toString());
+
+		return (passed == attempted);
 	}
 
 }

@@ -1,116 +1,120 @@
-[
-	{
-		"name": "Home page",
-		"url": "/",
-		"canonical": "/",
-		"title": "ShopStyle for Fashion and Designers - Shoes, Jewelry, Dresses & Clothes",
-		"hreflangs":
+{
+	"locale": "en",
+	"tests":
+	[
 		{
-			"en": "/",
-			"en-CA": "/",
-			"en-GB": "/",
-			"en-AU": "/",
-			"fr": "/",
-			"de": "/",
-			"ja": "/"
-		}
-	},
+			"name": "Home page",
+			"url": "/",
+			"canonical": "/",
+			"title": "ShopStyle for Fashion and Designers - Shoes, Jewelry, Dresses & Clothes",
+			"hreflangs":
+			{
+				"en": "/",
+				"en-CA": "/",
+				"en-GB": "/",
+				"en-AU": "/",
+				"fr": "/",
+				"de": "/",
+				"ja": "/"
+			}
+		},
 
-	{
-		"name": "Womens Clothes",
-		"url": "/browse/womens-clothes",
-		"canonical": "/browse/womens-clothes",
-		"title": "Women's Clothes - ShopStyle",
-		"h1": "Clothing",
-		"hreflangs":
 		{
-			"en": "/browse/womens-clothes",
-			"en-CA": "/browse/womens-clothes",
-			"en-GB": "/browse/womens-clothes",
-			"en-AU": "/browse/womens-clothes",
-			"fr": "/browse/vetements-femme",
-			"de": "/browse/damen-kleidung",
-			"ja": "/browse/%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3"
-		}
-	},
+			"name": "Womens Clothes",
+			"url": "/browse/womens-clothes",
+			"canonical": "/browse/womens-clothes",
+			"title": "Women's Clothes - ShopStyle",
+			"h1": "Clothing",
+			"hreflangs":
+			{
+				"en": "/browse/womens-clothes",
+				"en-CA": "/browse/womens-clothes",
+				"en-GB": "/browse/womens-clothes",
+				"en-AU": "/browse/womens-clothes",
+				"fr": "/browse/vetements-femme",
+				"de": "/browse/damen-kleidung",
+				"ja": "/browse/%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3"
+			}
+		},
 
-	{
-		"name": "Polk dot dresses",
-		"url": "/browse?fts=polka+dot+dresses",
-		"canonical": "/browse?fts=polka+dot+dresses",
-		"title": "Polka Dot Dresses - ShopStyle",
-		"h1": "Polka dot dresses"
-	},
-
-	{
-		"name": "Asos (vanity url with brand)",
-		"url": "/browse/Asos",
-		"canonical": "/browse/women/Asos",
-		"title": "Asos - ShopStyle",
-		"h1": "Asos",
-		"hreflangs":
 		{
-			"en": "/browse/women/Asos",
-			"en-CA": "/browse/women/Asos",
-			"en-GB": "/browse/women/Asos",
-			"en-AU": "/browse/women/Asos",
-			"fr": "/browse/mode-femme/Asos",
-			"de": "/browse/damenmode/Asos",
-			"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
-		}
-	},
+			"name": "Polk dot dresses",
+			"url": "/browse?fts=polka+dot+dresses",
+			"canonical": "/browse?fts=polka+dot+dresses",
+			"title": "Polka Dot Dresses - ShopStyle",
+			"h1": "Polka dot dresses"
+		},
 
-	{
-		"name": "Asos (ugly url with brand)",
-		"url": "/browse?fl=b4486",
-		"canonical": "/browse/women/Asos",
-		"title": "Asos - ShopStyle",
-		"h1": "Asos",
-		"hreflangs":
 		{
-			"en": "/browse/women/Asos",
-			"en-CA": "/browse/women/Asos",
-			"en-GB": "/browse/women/Asos",
-			"en-AU": "/browse/women/Asos",
-			"fr": "/browse/mode-femme/Asos",
-			"de": "/browse/damenmode/Asos",
-			"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
-		}
-	},
+			"name": "Asos (vanity url with brand)",
+			"url": "/browse/Asos",
+			"canonical": "/browse/women/Asos",
+			"title": "Asos - ShopStyle",
+			"h1": "Asos",
+			"hreflangs":
+			{
+				"en": "/browse/women/Asos",
+				"en-CA": "/browse/women/Asos",
+				"en-GB": "/browse/women/Asos",
+				"en-AU": "/browse/women/Asos",
+				"fr": "/browse/mode-femme/Asos",
+				"de": "/browse/damenmode/Asos",
+				"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
+			}
+		},
 
-	{
-		"name": "Asos (vanity url with category + brand)",
-		"url": "/browse/women/Asos",
-		"canonical": "/browse/women/Asos",
-		"title": "Asos - ShopStyle",
-		"h1": "Asos",
-		"hreflangs":
 		{
-			"en": "/browse/women/Asos",
-			"en-CA": "/browse/women/Asos",
-			"en-GB": "/browse/women/Asos",
-			"en-AU": "/browse/women/Asos",
-			"fr": "/browse/mode-femme/Asos",
-			"de": "/browse/damenmode/Asos",
-			"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
-		}
-	},
+			"name": "Asos (ugly url with brand)",
+			"url": "/browse?fl=b4486",
+			"canonical": "/browse/women/Asos",
+			"title": "Asos - ShopStyle",
+			"h1": "Asos",
+			"hreflangs":
+			{
+				"en": "/browse/women/Asos",
+				"en-CA": "/browse/women/Asos",
+				"en-GB": "/browse/women/Asos",
+				"en-AU": "/browse/women/Asos",
+				"fr": "/browse/mode-femme/Asos",
+				"de": "/browse/damenmode/Asos",
+				"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
+			}
+		},
 
-	{
-		"name": "Asos (ugly url with category + brand)",
-		"url": "/browse/women?fl=b4486",
-		"canonical": "/browse/women/Asos",
-		"title": "Asos - ShopStyle",
-		"h1": "Asos",
-		"hreflangs":
 		{
-			"en": "/browse/women/Asos",
-			"en-CA": "/browse/women/Asos",
-			"en-GB": "/browse/women/Asos",
-			"en-AU": "/browse/women/Asos",
-			"fr": "/browse/mode-femme/Asos",
-			"de": "/browse/damenmode/Asos",
-			"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
+			"name": "Asos (vanity url with category + brand)",
+			"url": "/browse/women/Asos",
+			"canonical": "/browse/women/Asos",
+			"title": "Asos - ShopStyle",
+			"h1": "Asos",
+			"hreflangs":
+			{
+				"en": "/browse/women/Asos",
+				"en-CA": "/browse/women/Asos",
+				"en-GB": "/browse/women/Asos",
+				"en-AU": "/browse/women/Asos",
+				"fr": "/browse/mode-femme/Asos",
+				"de": "/browse/damenmode/Asos",
+				"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
+			}
+		},
+
+		{
+			"name": "Asos (ugly url with category + brand)",
+			"url": "/browse/women?fl=b4486",
+			"canonical": "/browse/women/Asos",
+			"title": "Asos - ShopStyle",
+			"h1": "Asos",
+			"hreflangs":
+			{
+				"en": "/browse/women/Asos",
+				"en-CA": "/browse/women/Asos",
+				"en-GB": "/browse/women/Asos",
+				"en-AU": "/browse/women/Asos",
+				"fr": "/browse/mode-femme/Asos",
+				"de": "/browse/damenmode/Asos",
+				"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/Asos"
+			}
 		}
-	}
-]
+	]
+}

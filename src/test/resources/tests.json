@@ -1,32 +1,36 @@
-[
-	{
-		"name": "Men Retailer",
-		"url": "/browse/men?fl=r1",
-		"canonical": "/browse/men/Nordstrom-US",
-		"title": "Nordstrom Men's Fashion - ShopStyle",
-		"h1": "Nordstrom Men's Fashion",
-		"hreflangs":
+{
+	"locale": "en",
+	"tests":
+	[
 		{
-			"en": "/browse/men/Nordstrom-US",
-			"ja": "/browse/%E3%83%A1%E3%83%B3%E3%82%BA/Nordstrom-US",
-			"fr": "/browse/mode-homme/Nordstrom-US",
-			"en-CA": "/browse/men/Nordstrom-US",
-			"en-GB": "/browse/men/Nordstrom-US",
-			"en-AU": "/browse/men/Nordstrom-US",
-			"de": "/browse/herrenmode/Nordstrom-US"
-		}
-	},
+			"name": "Men Retailer",
+			"url": "/browse/men?fl=r1",
+			"canonical": "/browse/men/Nordstrom-US",
+			"title": "Nordstrom Men's Fashion - ShopStyle",
+			"h1": "Nordstrom Men's Fashion",
+			"hreflangs":
+			{
+				"en": "/browse/men/Nordstrom-US",
+				"ja": "/browse/%E3%83%A1%E3%83%B3%E3%82%BA/Nordstrom-US",
+				"fr": "/browse/mode-homme/Nordstrom-US",
+				"en-CA": "/browse/men/Nordstrom-US",
+				"en-GB": "/browse/men/Nordstrom-US",
+				"en-AU": "/browse/men/Nordstrom-US",
+				"de": "/browse/herrenmode/Nordstrom-US"
+			}
+		},
 
-	{
-		"name": "Men Many Filters NoIndex",
-		"url": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0",
-		"canonical": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0",
-		"title": "Men's Fashion on Sale - ShopStyle",
-		"h1": "Men's Fashion on sale",
-		"robots": "noindex",
-		"hreflangs":
 		{
-			"en": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0"
+			"name": "Men Many Filters NoIndex",
+			"url": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0",
+			"canonical": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0",
+			"title": "Men's Fashion on Sale - ShopStyle",
+			"h1": "Men's Fashion on sale",
+			"robots": "noindex",
+			"hreflangs":
+			{
+				"en": "/browse/men?fl=r1&fl=r2&fl=r3&fl=d0"
+			}
 		}
-	}
-]
+	]
+}

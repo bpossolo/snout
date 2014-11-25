@@ -1,66 +1,70 @@
-[
-	{
-		"name": "Home page",
-		"url": "/",
-		"canonical": "/",
-		"title": "ShopStyle Deutschland - die aktuellsten Trends, die angesagtesten Schuhe, Schmuck, Kleider & Kleidung",
-		"hreflangs":
+{
+	"locale": "de",
+	"tests":
+	[
 		{
-			"en": "/",
-			"ja": "/",
-			"fr": "/",
-			"en-CA": "/",
-			"en-GB": "/",
-			"en-AU": "/",
-			"de": "/"
-		}
-	},
+			"name": "Home page",
+			"url": "/",
+			"canonical": "/",
+			"title": "ShopStyle Deutschland - die aktuellsten Trends, die angesagtesten Schuhe, Schmuck, Kleider & Kleidung",
+			"hreflangs":
+			{
+				"en": "/",
+				"ja": "/",
+				"fr": "/",
+				"en-CA": "/",
+				"en-GB": "/",
+				"en-AU": "/",
+				"de": "/"
+			}
+		},
 
-	{
-		"name": "Womens Jewelry",
-		"url": "/browse/schmuck",
-		"canonical": "/browse/schmuck",
-		"title": "Schmuck für Damen - ShopStyle Deutschland",
-		"h1": "Schmuck",
-		"hreflangs":
 		{
-			"en": "/browse/jewelry",
-			"ja": "/browse/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC",
-			"fr": "/browse/bijoux",
-			"en-CA": "/browse/jewelry",
-			"en-GB": "/browse/jewelry",
-			"en-AU": "/browse/jewelry",
-			"de": "/browse/schmuck"
-		}
-	},
+			"name": "Womens Jewelry",
+			"url": "/browse/schmuck",
+			"canonical": "/browse/schmuck",
+			"title": "Schmuck für Damen - ShopStyle Deutschland",
+			"h1": "Schmuck",
+			"hreflangs":
+			{
+				"en": "/browse/jewelry",
+				"ja": "/browse/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B5%E3%83%AA%E3%83%BC",
+				"fr": "/browse/bijoux",
+				"en-CA": "/browse/jewelry",
+				"en-GB": "/browse/jewelry",
+				"en-AU": "/browse/jewelry",
+				"de": "/browse/schmuck"
+			}
+		},
 
-	{
-		"name": "Local Stores Only",
-		"url": "/browse?localStores=1",
-		"canonical": "/browse/damenmode",
-		"title": "Damenmode - ShopStyle Deutschland",
-		"h1": "Damenmode",
-		"hreflangs":
 		{
-			"en": "/browse/women",
-			"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3",
-			"fr": "/browse/mode-femme",
-			"en-CA": "/browse/women",
-			"en-GB": "/browse/women",
-			"en-AU": "/browse/women",
-			"de": "/browse/damenmode"
-		}
-	},
+			"name": "Local Stores Only",
+			"url": "/browse?localStores=1",
+			"canonical": "/browse/damenmode",
+			"title": "Damenmode - ShopStyle Deutschland",
+			"h1": "Damenmode",
+			"hreflangs":
+			{
+				"en": "/browse/women",
+				"ja": "/browse/%E3%83%AC%E3%83%87%E3%82%A3%E3%83%BC%E3%82%B9-%E3%83%95%E3%82%A1%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3",
+				"fr": "/browse/mode-femme",
+				"en-CA": "/browse/women",
+				"en-GB": "/browse/women",
+				"en-AU": "/browse/women",
+				"de": "/browse/damenmode"
+			}
+		},
 
-	{
-		"name": "Womens German Brand Petite-Fleur",
-		"url": "/browse/damenmode/Petite-Fleur",
-		"canonical": "/browse/damenmode/Petite-Fleur",
-		"title": "Petite Fleur - ShopStyle Deutschland",
-		"h1": "Petite Fleur",
-		"hreflangs":
 		{
-			"de": "/browse/damenmode/Petite-Fleur"
+			"name": "Womens German Brand Petite-Fleur",
+			"url": "/browse/damenmode/Petite-Fleur",
+			"canonical": "/browse/damenmode/Petite-Fleur",
+			"title": "Petite Fleur - ShopStyle Deutschland",
+			"h1": "Petite Fleur",
+			"hreflangs":
+			{
+				"de": "/browse/damenmode/Petite-Fleur"
+			}
 		}
-	}
-]
+	]
+}

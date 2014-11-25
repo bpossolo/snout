@@ -2,8 +2,7 @@
 	"numThreads": 5,
 	"maxAttemptsPerTest": 3,
 	"userAgent": "googlebot",
-	"baseUrl": "http://www.shopstyle.com",
-	"altLocaleBaseUrls":
+	"baseUrls":
 	{
 		"en": "http://www.shopstyle.com",
 		"en-CA": "http://www.shopstyle.ca",
