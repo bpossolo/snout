@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.shopstyle</groupId>
 	<artifactId>snout</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 
 	<name>Snout HTML Verifier</name>
 	<description>Compares the HTML your site is producing against some expected results. Useful for verifying that the HTML elements important for SEO are correct.</description>
