@@ -14,7 +14,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		if (args.length != 2){
-			System.out.println("Usage: snout <locale> <config-filename> <tests-filename>");
+			System.out.println("Usage: main.sh <config-filename> <tests-filename>");
 			System.exit(InsufficientArgs);
 		}
 		File configFile = new File(args[0]);
