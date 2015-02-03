@@ -54,6 +54,7 @@ public class TestOrchestrator {
 
 		for (Test failedTest : failureQueue){
 			sb.append("Test Failure: ").append(failedTest.getName()).append('\n');
+			sb.append("  URL:").append(failedTest.getUrl()).append('\n');
 			for (Failure f : failedTest.getFailures()){
 				sb.append("  ").append(f.getMsg()).append('\n');
 			}
